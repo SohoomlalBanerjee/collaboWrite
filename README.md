@@ -1,6 +1,3 @@
-
-Sure, here's the updated title and README.md with the app name "CollaboWrite":
-
 CollaboWrite: Real-Time Collaborative Document Editor
 CollaboWrite is a real-time collaborative document editor web application built with React, Socket.IO, and Quill.
 
