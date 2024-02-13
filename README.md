@@ -1,60 +1,76 @@
-CollaboWrite: Real-Time Collaborative Document Editor
+# CollaboWrite
+
 CollaboWrite is a real-time collaborative document editor web application built with React, Socket.IO, and Quill.
 
-Overview
+## Overview
+
 This application allows multiple users to collaborate on documents in real time. Each user can see changes made by other users instantly, enabling seamless collaboration on shared documents.
 
-Features
-Real-Time Collaboration: Multiple users can edit the same document simultaneously, with changes being synced across all connected clients in real time.
-Rich Text Editing: Utilizes the Quill rich text editor, providing a familiar and feature-rich interface for creating and editing documents.
-Socket.IO Integration: Socket.IO is used for real-time communication between the server and clients, facilitating instant updates and synchronization of document changes.
-Document Persistence: Documents are stored in a MongoDB database, allowing users to access and continue working on their documents across sessions.
-Installation
-Clone the repository:
+## Features
 
-bash
-Copy code
-git clone https://github.com/your-username/collabowrite.git
-Navigate to the project directory:
+- **Real-Time Collaboration:** Multiple users can edit the same document simultaneously, with changes being synced across all connected clients in real time.
+- **Rich Text Editing:** Utilizes the Quill rich text editor, providing a familiar and feature-rich interface for creating and editing documents.
+- **Socket.IO Integration:** Socket.IO is used for real-time communication between the server and clients, facilitating instant updates and synchronization of document changes.
+- **Document Persistence:** Documents are stored in a MongoDB database, allowing users to access and continue working on their documents across sessions.
 
-bash
-Copy code
-cd collabowrite
-Install dependencies:
+## Installation
 
-bash
-Copy code
-npm install
-Set up environment variables:
+1. Clone the repository:
 
-Create a .env file in the root directory and add the following:
+    ```bash
+    git clone https://github.com/your-username/collabowrite.git
+    ```
 
-plaintext
-Copy code
-REACT_APP_SOCKET_URL=ws://localhost:3001
-Replace ws://localhost:3001 with the URL of your Socket.IO server.
+2. Navigate to the project directory:
 
-Start the development server:
+    ```bash
+    cd collabowrite
+    ```
 
-bash
-Copy code
-npm start
-Open your browser and navigate to http://localhost:3000 to view the application.
+3. Install dependencies:
 
-Usage
-Open the application in your web browser.
-Create or select a document to collaborate on.
-Start editing the document. Any changes you make will be immediately visible to other users collaborating on the same document.
-Save your changes when finished.
-Technologies Used
-React
-Socket.IO
-Quill
-MongoDB
-Node.js
-Express
-Contributing
+    ```bash
+    npm install
+    ```
+
+4. Set up environment variables:
+
+    Create a `.env` file in the root directory and add the following:
+
+    ```plaintext
+    REACT_APP_SOCKET_URL=ws://localhost:3001
+    ```
+
+    Replace `ws://localhost:3001` with the URL of your Socket.IO server.
+
+5. Start the development server:
+
+    ```bash
+    npm start
+    ```
+
+6. Open your browser and navigate to `http://localhost:3000` to view the application.
+
+## Usage
+
+1. Open the application in your web browser.
+2. Create or select a document to collaborate on.
+3. Start editing the document. Any changes you make will be immediately visible to other users collaborating on the same document.
+4. Save your changes when finished.
+
+## Technologies Used
+
+- React
+- Socket.IO
+- Quill
+- MongoDB
+- Node.js
+- Express
+
+## Contributing
+
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
-License
-This project is licensed under the MIT License.
+## License
+
+This project is licensed under the [MIT License](LICENSE).
